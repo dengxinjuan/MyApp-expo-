@@ -7,6 +7,7 @@
     <key>com.apple.security.application-groups</key>
     <array>
       <string>group.xinjuan.onesignal.reactnativeexpo.onesignal</string>
+      <string>group.xinjuan.onesignal.reactnativeexpo.OneSignalNotificationServiceExtension.onesignal</string>
     </array>
   </dict>
 </plist>

@@ -25,7 +25,13 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>xinjuan.onesignal.reactnativeexpo</string>
+          <string>xinjuan.onesignal.reactnativeexpo.OneSignalNotificationServiceExtension</string>
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>exp+my-app</string>
         </array>
       </dict>
     </array>

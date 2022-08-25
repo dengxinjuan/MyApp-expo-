@@ -9,7 +9,7 @@ export default function App() {
   });
   return (
     <View style={styles.container}>
-      <Text>I need to create a prompt button to prompt for ios
+      <Text>the ios bundle mismatch. I dont know why~
       </Text>
       <StatusBar style="auto" />
     </View>
