@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,Button,Alert } from 'react-native';
+import { StyleSheet, Text, View,Button,Alert,Image,ScrollView } from 'react-native';
 import OneSignal from 'react-native-onesignal';
 
-const image = require('./');
+
+
 
 export default function App() {
   OneSignal.setAppId("4a3d23c8-8d8a-4f84-acf9-23146df6b98e");
@@ -15,6 +16,10 @@ export default function App() {
   });
   return (
     <View style={styles.container}>
+      <ScrollView horizaontal={true}> 
+      <View style={{ width: 300, height: 300, backgroundColor: 'red' }} />
+      <View style={{ width: 300, height: 300, backgroundColor: 'green' }} />
+       </ScrollView>
       <Text>I receive ios notification! it is cool!::</Text>
       <Text>Your player Id is {deviceState[0]}</Text>
       <StatusBar style="auto" />
@@ -23,12 +28,15 @@ export default function App() {
         <Button title="set email" onPress={() => OneSignal.setEmail('dengxinju@msu.edu')} />
         <Button title="Tag User" onPress={() => OneSignal.sendTag("hello","world")} />
       </View>
-      <View style={{ flex: 1, justifyContent: 'center' }}>
+      <View style={{ flex: 1}}>
     <Image
-      source={image}
+     source={{
+      uri: 'https://reactnative.dev/img/tiny_logo.png',
+    }}
       style={{ width: 100, height: 100 }}
     />
   </View>
+
     </View>
   );
 }
